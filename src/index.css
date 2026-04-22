@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  overflow: hidden;
+  user-select: none;
+}
+
+@keyframes puyoPop {
+  0%   { transform: scale(1);   opacity: 1; }
+  30%  { transform: scale(1.5); opacity: 0.9; filter: brightness(1.6); }
+  60%  { transform: scale(1.2); opacity: 0.5; }
+  100% { transform: scale(0);   opacity: 0; }
+}
+
+@keyframes chainPulse {
+  0%   { transform: scale(0.7); opacity: 0; }
+  60%  { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1);   opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
