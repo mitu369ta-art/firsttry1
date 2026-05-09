@@ -19,11 +19,11 @@ export function ScorePanel({ score, level, totalPopped, chainCount, maxChain }: 
       boxShadow: 'inset 0 0 30px rgba(0, 0, 50, 0.4)',
       minWidth: 130,
     }}>
-      <Stat label="SCORE" value={score.toLocaleString()} big />
-      <Stat label="LEVEL" value={level} />
-      <Stat label="POPPED" value={totalPopped} />
+      <Stat label="スコア" value={score.toLocaleString()} big />
+      <Stat label="レベル" value={level} />
+      <Stat label="消去数" value={totalPopped} />
       <Stat
-        label="MAX CHAIN"
+        label="最大連鎖"
         value={maxChain > 0 ? `${maxChain}連鎖` : '-'}
         glow={maxChain >= 3}
       />

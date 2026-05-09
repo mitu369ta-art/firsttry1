@@ -79,7 +79,7 @@ export function App() {
                 letterSpacing: 3,
                 marginBottom: 8,
               }}>
-                GAME OVER
+                ゲームオーバー
               </div>
               <div style={{ color: '#7777aa', fontSize: 13, marginBottom: 4 }}>
                 最終スコア
